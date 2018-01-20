@@ -1,10 +1,6 @@
 
 /*
- CIS 209: INTRODUCTION TO JAVA 
- CHAPTER 7 PROJECT 
- TARESSA HALPIN 
- 11-13-17
- 
+
  LOCKER PROBLEM: 
  A school has 100 lockers and 100 students. All lockers are closed on the first day of school. 
  As the students enter, the first student, denoted S1, opens every locker. 
@@ -19,11 +15,13 @@ After all the students have passed through the building and changed the lockers,
  */
 
 public class SchoolLockers {
+
     /*MAIN METHOD*/
 	public static void main(String[] args)
 	{
 		/*BOOLEAN ARRAY LOCKERS NEW BOOLEAN ARRAY*/
 		boolean[] lockers = new boolean[101];
+		
 		/*FOR LOOP: FIRST VALUE - LOCKERS.LENGTH - INCREMENT*/
 		for (int firstValue = 1; firstValue < lockers.length; firstValue++)
 		{
@@ -45,6 +43,7 @@ public class SchoolLockers {
 		{ 
 			//IF: LOCKERS FIRST VALUE ARRAY SET TO TRUE
 			if (lockers[firstValue] == true)
+				
 				//PRINTS OUT LOCKER - FIRSTVALUE - IS OPEN 
 				System.out.println("LOCKER: " + firstValue + " IS OPEN.");
 		}	
